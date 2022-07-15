@@ -27,7 +27,7 @@ const axios = require('axios');
         const embed = {
           author: {
             name: github.context.payload.repository.full_name + ' wiki',
-            url: github.context.payload.repository.html_url,
+            url: github.context.payload.repository.html_url + '/wiki',
             icon_url: github.context.payload.repository.owner.avatar_url,
           },
           title: page.title,
