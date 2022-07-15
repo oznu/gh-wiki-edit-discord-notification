@@ -1,0 +1,27 @@
+{
+  "name": "@oznu/gh-wiki-edit-discord-notification",
+  "version": "1.0.0",
+  "description": "Sends a message to a Discord channel when someone edits a GitHub project wiki.",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oznu/test.git"
+  },
+  "author": "oznu <dev@oz.nu>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/oznu/test/issues"
+  },
+  "homepage": "https://github.com/oznu/test#readme",
+  "dependencies": {
+    "@actions/core": "^1.9.0",
+    "@actions/github": "^5.0.3",
+    "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.34.0"
+  }
+}
