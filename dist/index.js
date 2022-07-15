@@ -13986,8 +13986,8 @@ const axios = __nccwpck_require__(6545);
           },
           title: page.title,
           url: page.html_url,
-          description: `Page **${page.action}** by [${github.context.payload.sender.login}](${github.context.payload.sender.html_url}).`,
-          fields: [],
+          description: `Page **${page.action}** by [${github.context.payload.sender.login}](${github.context.payload.sender.html_url}).\n\n` + 
+            `[View Changes](${page.html_url}/_compare/${page.sha})`,
         }
 
         if (page.summary) {
