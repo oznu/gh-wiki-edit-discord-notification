@@ -21,18 +21,18 @@ const axios = require('axios');
     }
 
     const discordWebHookPayload = {
-      username: 'github-actions',
-      avatar_url: 'https://avatars.githubusercontent.com/in/15368',
+      username: core.getInput('discord-username'),
+      avatar_url: core.getInput('discord-avatar-url'),
       embeds: github.context.payload?.pages?.map((page) => {
         const embed = {
           author: {
-            name: github.context.payload.sender.login,
-            url: github.context.payload.sender.html_url,
-            icon_url: github.context.payload.sender.avatar_url,
+            name: github.context.payload.repository.full_name + ' wiki',
+            url: github.context.payload.repository.html_url,
+            icon_url: github.context.payload.repository.owner.avatar_url,
           },
           title: page.title,
           url: page.html_url,
-          description: `${github.context.payload.sender.login} **${page.action}** a ${github.context.payload.repository.full_name} wiki page.`,
+          description: `[${github.context.payload.sender.login}](${github.context.payload.sender.html_url}) **${page.action}** a ${github.context.payload.repository.full_name} wiki page.`,
           fields: [],
         }
 

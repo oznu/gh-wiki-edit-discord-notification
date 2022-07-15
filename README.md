@@ -6,6 +6,8 @@ Sends a message to a Discord channel when someone edits the GitHub project wiki.
 
 * `discord-webhook-url`: (required, string) A discord channel webhook URL 
 * `ignore-contributors`: (optional, boolean, default = `false`) Ignore edits made by repo contributors
+* `discord-username`: (optional, string, default = `github-actions`) The bot username for Discord
+* `discord-avatar-url`: (optional, string) The bot avatar url for Discord
 
 ## Discord Webook URL
 
