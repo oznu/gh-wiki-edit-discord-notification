@@ -32,7 +32,7 @@ const axios = require('axios');
           },
           title: page.title,
           url: page.html_url,
-          description: `[${github.context.payload.sender.login}](${github.context.payload.sender.html_url}) **${page.action}** a ${github.context.payload.repository.full_name} wiki page.`,
+          description: ` **${page.action}** by [${github.context.payload.sender.login}](${github.context.payload.sender.html_url}).`,
           fields: [],
         }
 

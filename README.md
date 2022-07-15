@@ -16,6 +16,8 @@ This should be set as an [Action Secret](https://docs.github.com/en/rest/actions
 ## Example usage
 
 ```yml
+name: Wiki Change Discord Notifications
+
 on:
   gollum
 
