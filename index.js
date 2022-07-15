@@ -34,7 +34,6 @@ const axios = require('axios');
           url: page.html_url,
           description: `[View Changes](${page.html_url}/_compare/${page.sha})`,
           footer: {
-            icon_url: github.context.payload.sender.avatar_url,
             text: `Page ${page.action} by ${github.context.payload.sender.login}.`
           }
         }
