@@ -7,7 +7,7 @@ GitHub Action to notify a Discord channel when someone edits the a project wiki.
 ## Inputs
 
 * `discord-webhook-url`: (required, string) A discord channel webhook URL 
-* `ignore-contributors`: (optional, boolean, default = `false`) Ignore edits made by repo contributors
+* `ignore-collaborators`: (optional, boolean, default = `false`) Ignore edits made by repo collaborators
 * `discord-username`: (optional, string, default = `github-actions`) The bot username for Discord
 * `discord-avatar-url`: (optional, string) The bot avatar url for Discord
 
@@ -30,5 +30,5 @@ jobs:
       - uses: 'oznu/gh-wiki-edit-discord-notification@main'
         with:
           discord-webhook-url: ${{ secrets.DISCORD_WEBHOOK_WIKI_EDIT }}
-          ignore-contributors: true
+          ignore-collaborators: true
 ```

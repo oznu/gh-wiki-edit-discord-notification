@@ -7,16 +7,16 @@ const axios = require('axios');
     // get the discord webhook url
     const discordWebHookUrl = core.getInput('discord-webhook-url');
 
-    // Get the repo contributors
+    // Get the repo collaborators
     const response = await axios.get(`https://api.github.com/repos/${github.context.payload.repository.full_name}/collaborators`, {
       headers: {
         'Authorization': `token ${core.getInput('token')}`
       }
     });
-    const contributors = response.data;
+    const collaborators = response.data;
 
-    if (core.getInput('ignore-contributors') === "true" && contributors.find(x => x.id === github.context.payload.sender.id)) {
-      console.log('Not sending webhook event for repo contributor.')
+    if (core.getInput('ignore-collaborators') === "true" && collaborators.find(x => x.id === github.context.payload.sender.id)) {
+      console.log('Not sending webhook event for repo collaborators.')
       return;
     }
 

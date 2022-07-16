@@ -13969,7 +13969,7 @@ const axios = __nccwpck_require__(6545);
     });
     const contributors = response.data;
 
-    if (core.getInput('ignore-contributors') === "true" && contributors.find(x => x.id === github.context.payload.sender.id)) {
+    if (core.getInput('ignore-collaborators') === "true" && contributors.find(x => x.id === github.context.payload.sender.id)) {
       console.log('Not sending webhook event for repo contributor.')
       return;
     }
