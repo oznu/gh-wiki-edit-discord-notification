@@ -2,6 +2,8 @@
 
 GitHub Action to notify a Discord channel when someone edits the a project wiki.
 
+<img width="337" alt="image" src="https://user-images.githubusercontent.com/3979615/179344368-c69554a6-57e9-46d2-a15d-d35af0e41310.png">
+
 ## Inputs
 
 * `discord-webhook-url`: (required, string) A discord channel webhook URL 
