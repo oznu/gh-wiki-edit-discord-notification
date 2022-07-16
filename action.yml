@@ -1,5 +1,5 @@
 name: 'Project Wiki Edit Discord Notifications'
-description: 'GitHub Action to notify a Discord channel when someone edits the a project wiki.'
+description: 'GitHub Action to notify a Discord channel when someone edits the project wiki.'
 branding:
   icon: message-circle
   color: purple

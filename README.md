@@ -1,6 +1,6 @@
 # GitHub Action - Project Wiki Edit Discord Notifications
 
-GitHub Action to notify a Discord channel when someone edits the a project wiki.
+GitHub Action to notify a Discord channel when someone edits the project wiki.
 
 <img width="337" alt="image" src="https://user-images.githubusercontent.com/3979615/179344368-c69554a6-57e9-46d2-a15d-d35af0e41310.png">
 
