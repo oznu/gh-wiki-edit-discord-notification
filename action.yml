@@ -1,5 +1,5 @@
-name: 'GitHub Wiki Edit Discord Notifications'
-description: 'Sends a message to a Discord channel when someone edits a GitHub project wiki.'
+name: 'Project Wiki Edit Discord Notifications'
+description: 'GitHub Action to notify a Discord channel when someone edits the a project wiki.'
 branding:
   icon: message-circle
   color: purple
@@ -8,7 +8,7 @@ inputs:
     description: 'The Discord channel webhook url'
     required: true
   ignore-collaborators:
-    description: 'If set to true, changes made by repo/org contributors will not trigger the webhook'
+    description: 'If set to true, changes made by repo/org collaborators will not trigger the webhook'
     default: false
   token:
     description: 'GITHUB_TOKEN or a repo scoped PAT'
